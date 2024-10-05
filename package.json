@@ -9,7 +9,6 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@types/chalk": "2.2.0",
 		"@types/lokijs": "1.5.14",
 		"@types/node": "20.11.5",
 		"@types/promise-retry": "1.1.6",
@@ -18,7 +17,7 @@
 		"@types/twemoji-parser": "13.1.4",
 		"@types/uuid": "10.0.0",
 		"@types/ws": "8.5.12",
-		"canvas": "2.11.2",
+		"canvas": "3.0.0-rc2",
 		"chalk": "5.3.0",
 		"formdata-node": "6.0.3",
 		"got": "14.0.0",
