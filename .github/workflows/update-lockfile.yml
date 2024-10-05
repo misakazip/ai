@@ -31,5 +31,4 @@ jobs:
         continue-on-error: true
 
       - name: Push changes
-        if: success() && steps.update-lockfile.outputs.updated == 'true'
         run: git push
