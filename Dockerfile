@@ -17,7 +17,8 @@ RUN if [ $enable_mecab -ne 0 ]; then apt-get update \
   && cd /opt/mecab-ipadic-neologd \
   && ./bin/install-mecab-ipadic-neologd -n -y \
   && rm -rf /opt/mecab-ipadic-neologd \
-  && echo "dicdir = /usr/lib/$(uname -m)-linux-gnu/mecab/dic/mecab-ipadic-neologd/" > /etc/mecabrc \
+  && [ "$(uname -m)" = "x86_64" ] && export $INSTALL_DIR="/usr/lib/x86_64-linux-gnu" || export $INSTALL_DIR="/usr/lib/aarch64-linux-gnu" \
+  && echo dicdir = "$INSTALL_DIR/mecab/dic/mecab-ipadic-neologd/" > /etc/mecabrc \
   && apt-get purge git curl xz-utils file -y; fi
 
 COPY . /ai
