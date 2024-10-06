@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ "master" ]
+  pull_request: 
+    branches: [ "master" ]
 
 jobs:
   buildx:
@@ -37,4 +39,6 @@ jobs:
           platforms: linux/amd64,linux/aarch64
           tags: |
             ghcr.io/${{ github.repository_owner }}/ai:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
   
