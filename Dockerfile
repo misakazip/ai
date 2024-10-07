@@ -27,4 +27,4 @@ WORKDIR /ai
 RUN npm install && npm run build || test -f ./built/index.js
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD npm start
+CMD ["npm", "start"]
