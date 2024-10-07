@@ -28,7 +28,7 @@ Misskey用の日本語Botです。
 ```
 `npm install` して `npm run build` して `npm start` すれば起動できます
 
-## Dockerで動かす
+## Dockerで動かす (build)
 まず適当なディレクトリに `git clone` します。
 次にそのディレクトリに `config.json` を作成します。中身は次のようにします:
 （MeCabの設定、memoryDirについては触らないでください）
@@ -52,6 +52,11 @@ Misskey用の日本語Botです。
 `docker-compose build` して `docker-compose up` すれば起動できます。
 `docker-compose.yml` の `enable_mecab` を `0` にすると、MeCabをインストールしないようにもできます。（メモリが少ない環境など）
 
+## Dockerで動かす(Use builded image)
+既にビルドされたイメージを使用することができます。以下のコマンドを実行して取得できます。
+```
+$ docker pull ghcr.io/misakazip/ai:latest
+```
 ## フォント
 一部の機能にはフォントが必要です。藍にはフォントは同梱されていないので、ご自身でフォントをインストールディレクトリに`font.ttf`という名前で設置してください。
 
