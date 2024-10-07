@@ -54,8 +54,13 @@ Misskey用の日本語Botです。
 
 ## Dockerで動かす(Use builded image)
 既にビルドされたイメージを使用することができます。以下のコマンドを実行して取得できます。
+[![Docker Image CI](https://github.com/misakazip/ai/actions/workflows/docker.yml/badge.svg)](https://github.com/misakazip/ai/actions/workflows/docker.yml)
 ```
 $ docker pull ghcr.io/misakazip/ai:latest
+```
+メモリーが少ない環境などではMeCabの含まれていないイメージを使用できます。
+```
+$ docker pull ghcr.io/misakazip/ai:small
 ```
 ## フォント
 一部の機能にはフォントが必要です。藍にはフォントは同梱されていないので、ご自身でフォントをインストールディレクトリに`font.ttf`という名前で設置してください。
