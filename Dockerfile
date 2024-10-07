@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18-slim
 
 RUN apt-get update && apt-get install tini --no-install-recommends -y
 # aarch64系などではパッケージが用意されておらず自前でbuildする必要があるため。
