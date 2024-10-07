@@ -53,12 +53,13 @@ Misskey用の日本語Botです。
 `docker-compose.yml` の `enable_mecab` を `0` にすると、MeCabをインストールしないようにもできます。（メモリが少ない環境など）
 
 ## Dockerで動かす(Use builded image)
-既にビルドされたイメージを使用することができます。以下のコマンドを実行して取得できます。
+既にビルドされたイメージを使用することができます。以下のコマンドを実行して取得できます。<br/>
 [![Docker Image CI](https://github.com/misakazip/ai/actions/workflows/docker.yml/badge.svg)](https://github.com/misakazip/ai/actions/workflows/docker.yml)
 ```
 $ docker pull ghcr.io/misakazip/ai:latest
 ```
-メモリーが少ない環境などではMeCabの含まれていないイメージを使用できます。
+メモリーが少ない環境などではMeCabの含まれていないイメージを使用できます。<br/>
+[![Docker Image CI (disable mecab)](https://github.com/misakazip/ai/actions/workflows/docker_disable-mecab.yml/badge.svg)](https://github.com/misakazip/ai/actions/workflows/docker_disable-mecab.yml)
 ```
 $ docker pull ghcr.io/misakazip/ai:small
 ```
