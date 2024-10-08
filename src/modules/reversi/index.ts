@@ -54,8 +54,20 @@ export default class extends Module {
 			if (config.reversiEnabled) {
 				msg.reply(serifs.reversi.ok);
 
-				if (msg.includes(['接待'])) {
+				if (msg.includes(['接待', '0'])) {
 					msg.friend.updateReversiStrength(0);
+				}
+
+				if (msg.includes(['弱', '2'])) {
+					msg.friend.updateReversiStrength(2);
+				}
+
+				if (msg.includes(['中', '3'])) {
+					msg.friend.updateReversiStrength(3);
+				}
+
+				if (msg.includes(['最強', '5'])) {
+					msg.friend.updateReversiStrength(5);
 				}
 
 				this.ai.api('reversi/match', {
