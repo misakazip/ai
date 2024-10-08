@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ARG enable_mecab=1
 RUN if [ $enable_mecab -ne 0 ]; then \
     apt-get update && apt-get install -y --no-install-recommends \
-    mecab libmecab-dev mecab-ipadic-utf8 make curl xz-utils file sudo \
+    git mecab libmecab-dev mecab-ipadic-utf8 make curl xz-utils file sudo \
     && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && cd /opt && git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
     && cd /opt/mecab-ipadic-neologd && ./bin/install-mecab-ipadic-neologd -n -y \
