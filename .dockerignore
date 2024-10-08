@@ -1,8 +1,10 @@
+config.json
 font.ttf
 ai.*
 *.png
 Dockerfile
 docker-compose.yml
+.gitignore
 
 node_modules/
 test/
