@@ -4,10 +4,16 @@ on:
   workflow_dispatch:
   push:
     branches: [ "master" ]
+<<<<<<< HEAD
   paths-ignore:
     - '.github/**'
     - 'README.md'
     - 'docker-compose.yml'
+=======
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
+>>>>>>> 45a5eba00b13373369b7f3ddee5160eefa2a10c1
 
 jobs:
   buildx:
