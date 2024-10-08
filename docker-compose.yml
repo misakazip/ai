@@ -7,6 +7,9 @@ services:
       - './config.json:/ai/config.json:ro'
       - './font.ttf:/ai/font.ttf:ro'
       - './data:/ai/data'
+#    もし同一サーバー上でMisskeyを実行しており、藍をインターネットから隔離したい場合は「#」を削除してください。
+#    networks:
+#      - internal
     restart: always
 
   watchtower:
