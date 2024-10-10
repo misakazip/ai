@@ -2,9 +2,8 @@ name: Docker Image CI (disable mecab)
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ "master" ]
-    release:
+  release:
+    types: [published]
 
 jobs:
   buildx:

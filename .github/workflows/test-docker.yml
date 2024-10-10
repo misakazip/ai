@@ -2,6 +2,7 @@ name: Docker Test Builder
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   buildx:
