@@ -83,7 +83,7 @@ export default class extends Module {
 		});
 
 		// タイマーセット
-		this.setTimeoutWithPersistence(duration + 3000, {
+		this.setTimeoutWithPersistence(duration + 7200, {
 			title: poll[0],
 			noteId: note.id,
 		});
