@@ -2,12 +2,7 @@ name: Docker Image CI
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ "master" ]
-    paths-ignore:
-      - '.github/**'
-      - 'README.md'
-      - 'docker-compose.yml'
+  release:
 
 jobs:
   buildx:

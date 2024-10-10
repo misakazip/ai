@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'package.json'
+    paths-ignore:
+      - '.github'
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
