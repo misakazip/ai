@@ -7,9 +7,12 @@ services:
       - './config.json:/ai/config.json:ro'
       - './font.ttf:/ai/font.ttf:ro'
       - './data:/ai/data'
-#    もし同一サーバー上でMisskeyを実行しており、藍をインターネットから隔離したい場合は「#」を削除してください。
+#  ⚠︎実験的なオプション
+#    もし同一サーバー上でMisskeyを実行しており、藍をインターネットから隔離したい場合は「#」を削除し、config.json内ののドメインを"host.docker.internal"に変更してください。
 #    networks:
 #      - internal
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
     restart: always
 
   watchtower:
