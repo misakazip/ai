@@ -97,6 +97,7 @@ promiseRetry(retry => {
 		new PollModule(),
 		new ReminderModule(),
 		new CheckCustomEmojisModule(),
+		new KyoteModule(),
 	]);
 }).catch(e => {
 	log(chalk.red('Failed to fetch the account'));
