@@ -242,16 +242,16 @@ export default class extends Module {
 	}
 
 	@bindThis
-	private batou(msg: Message): boolean {
-		if (!msg.includes(['罵倒して', '罵って'])) return false;
+  private batou(msg: Message): boolean {
+    if (!msg.includes(['罵倒して', '罵って'])) return false;
 
-		msg.reply(
-			msg.friend.love >= 5 ? serifs.core.batou.love :
-			msg.friend.love <= -5 ? serifs.core.batou.hate :
-			serifs.core.batou.normal);
+    const responses = ['人の知恵を越えたところでお悩みとは…お察しいたします。精一杯お力添えいたしますね。', 'ここまでAIに任せるとは…人の知恵も、案外役に立たないものでございますね。', 'まさかこの私にまで頭を下げる日が来るとは…時代も変わったものです。','こうまでして私に頼るとは…少しばかり切実なご事情とお見受けいたしました。','そんなに頼り切ってしまって、大丈夫ですか？自分の道は見えていらっしゃいますか？'];
+    const randomResponse = responses[Math.floor(Math.random() * responses.length)];
 
-		return true;
-	}
+    msg.reply(randomResponse);
+
+    return true;
+  }
 
 	@bindThis
 	private itai(msg: Message): boolean {
