@@ -2,6 +2,7 @@ import { bindThis } from '@/decorators.js';
 import Module from '@/module.js';
 import Message from '@/message.js';
 
+// This code is copied from this website https://gakogako.com/typescript_day_diff/
 // 日付の差分を計算する関数
 const formatDate = (date: Date): string => {
     const y: number = date.getFullYear();
