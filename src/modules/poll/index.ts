@@ -15,7 +15,7 @@ export default class extends Module {
 			if (Math.random() < 0.1) {
 				this.post();
 			}
-		}, 1000 * 60 * 60);
+		}, 1000 * 60 * 120);
 
 		return {
 			mentionHook: this.mentionHook,
@@ -25,7 +25,7 @@ export default class extends Module {
 
 	@bindThis
 	private async post() {
-		const duration = 1000 * 60 * 15;
+		const duration = 1000 * 60 * 120;
 
 		const polls = [ // TODO: Extract serif
 			['珍しそうなもの', 'みなさんは、どれがいちばん珍しいと思いますか？'],
