@@ -16,7 +16,7 @@
 		"@types/seedrandom": "3.0.8",
 		"@types/twemoji-parser": "13.1.4",
 		"@types/uuid": "10.0.0",
-		"@types/ws": "8.5.12",
+		"@types/ws": "8.5.13",
 		"canvas": "3.0.0-rc2",
 		"chalk": "5.3.0",
 		"formdata-node": "6.0.3",
