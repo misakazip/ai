@@ -1,4 +1,4 @@
-FROM node:18-slim AS builder
+FROM node:20-slim AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tini \
@@ -22,7 +22,7 @@ COPY . /ai
 WORKDIR /ai
 RUN npm install && npm run build || test -f ./built/index.js
 
-FROM node:18-slim
+FROM node:20-slim
 COPY --from=builder /usr/bin/tini /usr/bin/tini
 COPY --from=builder /etc/mecabrc /etc/mecabrc
 COPY --from=builder /ai /ai
