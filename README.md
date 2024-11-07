@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> このAIは個人のMisskeyサーバー向けに大幅にカスタマイズされています。[多くの変更](https://github.com/syuilo/ai/compare/master...misakazip:ai:master)をしているので注意してください。
+
 <h1><p align="center"><img src="./ai.svg" alt="藍" height="200"></p></h1>
 <p align="center">An Ai for Misskey. <a href="./torisetu.md">About Ai</a></p>
 
