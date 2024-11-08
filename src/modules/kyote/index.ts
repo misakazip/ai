@@ -12,7 +12,7 @@ const formatDate = (date: Date): string => {
 };
 
 // 共通テストの日付
-const setDate: Date = new Date('2026-01-17');
+const setDate: Date = new Date('2025-01-18');
 
 export default class extends Module {
 	public readonly name = 'kyote';
