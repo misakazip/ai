@@ -27,8 +27,6 @@ import DiceModule from './modules/dice/index.js';
 import ServerModule from './modules/server/index.js';
 import FollowModule from './modules/follow/index.js';
 import ValentineModule from './modules/valentine/index.js';
-import MazeModule from './modules/maze/index.js';
-import ChartModule from './modules/chart/index.js';
 import SleepReportModule from './modules/sleep-report/index.js';
 import NotingModule from './modules/noting/index.js';
 import PollModule from './modules/poll/index.js';
@@ -89,8 +87,6 @@ promiseRetry(retry => {
 		new BirthdayModule(),
 		new ValentineModule(),
 		new KeywordModule(),
-		new MazeModule(),
-		new ChartModule(),
 		new SleepReportModule(),
 		new NotingModule(),
 		new PollModule(),

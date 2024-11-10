@@ -371,16 +371,6 @@ export default {
 		cpu: 'サーバーの負荷が高そうです。大丈夫でしょうか...？'
 	},
 
-	maze: {
-		post: '今日の迷路です！ #AiMaze',
-		foryou: '描きました！'
-	},
-
-	chart: {
-		post: 'インスタンスの投稿数です！',
-		foryou: '描きました！'
-	},
-
 	checkCustomEmojis: {
 		post: (server_name, num) => `${server_name}に${num}件の絵文字が追加されました！`,
 		emojiPost: emoji => `:${emoji}:\n(\`${emoji}\`) #AddCustomEmojis`,
